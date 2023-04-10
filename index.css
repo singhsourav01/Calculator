@@ -1,0 +1,79 @@
+html, body{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+}
+.display{grid-area: display;}
+
+.container{
+    background-color: dodgerblue
+    ;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.same-digit{
+    display: inline-block;
+}
+.display input{
+    width: 100%;
+    padding: 0.5rem 0rem;
+    text-align: center;
+    outline: none;
+    border-radius: 0.5rem;
+    border: 0;
+    font-size: 1.2rem;
+
+}
+
+.number-key button{
+    width: 3.5rem;
+}
+
+
+.number-key{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1rem;
+    padding-top: 1rem;
+}
+
+.same-digit{
+    padding: 1rem;
+    border: 2px solid black;
+    width: 2.5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+.same-digit:hover{
+    color: white;
+}
+
+.same-digit:hover{
+    background-color: rgb(95, 123, 151);
+}
+
+@media screen and (max-width : 400px) {
+    .display input{
+        font-size: 1rem;
+    
+    }
+    body{
+        background-color: black;
+    }
+    .container{
+        border-radius: 1rem;
+    }
+    .same-digit {
+        font-size: 0.7rem;
+    }
+    
+    .number-key button {
+
+        width: 2.5rem;
+
+    }   
+    
+}
